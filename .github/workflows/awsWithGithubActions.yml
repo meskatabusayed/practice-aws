@@ -1,0 +1,21 @@
+name: practice with githubActions
+
+on: push
+
+jobs:
+  my-first-jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print a message
+        run: echo "Hello this is my first github Actions"
+
+      - name: Cheeck Linting
+        run: echo "linting cheecking..."
+
+        
+
+
+
+
+
