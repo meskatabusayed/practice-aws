@@ -1,0 +1,15 @@
+name: Ready to the code for deploying
+
+#(manual run) er jonno workflow_dispatch likhe hoi
+
+on: [push , workflow_dispatch] 
+
+jobs:
+  test-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Working Directory
+        run: |
+          pwd
+          ls -a 
+          echo $GITHUB_WORKSPACE
