@@ -8,7 +8,16 @@ jobs:
   test-code:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Working Directory
-        run: |
-          node -v
-          git --version
+      - name: copying the code
+        uses: actions/checkout@v6
+
+      - name: install node-js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '23.11.0'
+
+      - name: Check Node Version
+        run: node -v 
+      
+      - name: Install Dependencies
+        run: npm install
