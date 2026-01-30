@@ -20,4 +20,6 @@ jobs:
         run: node -v 
       
       - name: Install Dependencies
-        run: npm install
+        run: npm install --frozen-lockfile
+
+        
